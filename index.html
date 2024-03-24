@@ -1,817 +1,150 @@
-<!DOCTYPE html>
-<html lang="fr-FR" class="no-js">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta charset="utf-8">
-<!-- 
-	DGDNum - Service SWEM Université de Lille
-
-	This website is powered by TYPO3 - inspiring people to share!
-	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
-	TYPO3 is copyright 1998-2024 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
-	Information and contribution at https://typo3.org/
--->
-
-
-<link rel="shortcut icon" href="/typo3conf/ext/ul2fpfb/Resources/Public/Icons/favicon.svg" type="image/svg+xml">
-<title>José ROUILLARD - Université de Lille</title>
-<meta name="generator" content="TYPO3 CMS" />
-<meta name="description" content="Maître de Conférences" />
-<meta name="robots" content="index,follow,archive,imageindex" />
-<meta name="keywords" content="université, Lille, research, laboratoire, recherche, science" />
-<meta name="author" content="Rouillard Jose" />
-<meta name="twitter:card" content="summary" />
-<meta name="googlebot" content="index,follow,archive,imageindex" />
-<meta name="revisit-after" content="7" />
-<meta name="copyright" content="Université de Lille" />
-<meta name="language" content="fr" />
-<meta name="author_email" content="webmestre@univ-lille.fr" />
-
-
-<link rel="stylesheet" type="text/css" href="/typo3conf/ext/news/Resources/Public/Css/news-basic.css?1650992832" media="all">
-<link rel="stylesheet" type="text/css" href="/typo3temp/assets/css/e011705f65.css?1683274918" media="all">
-<link rel="stylesheet" type="text/css" href="/typo3conf/ext/l2l3labens/Resources/Public/CSS/halproDisplay.css?1677510999" media="all">
-<link rel="stylesheet" type="text/css" href="/typo3conf/ext/ul2fpfb/Resources/Public/assets/css/bootstrap.css/bootstrap_a039b0daf4758bffb7688562138637eb.css?1711149756" media="all">
-<link rel="stylesheet" type="text/css" href="/typo3conf/ext/ul2fpfb/Resources/Public/assets/css/main.css/main_a039b0daf4758bffb7688562138637eb.css?1711149756" media="all">
-<link rel="stylesheet" type="text/css" href="/typo3conf/ext/ul2fpfb/Resources/Public/assets/css/menu.css/_menu_a039b0daf4758bffb7688562138637eb.css?1711149756" media="all">
-<link rel="stylesheet" type="text/css" href="/typo3conf/ext/ul2fpfb/Resources/Public/assets/css/frida.css/_frida_a039b0daf4758bffb7688562138637eb.css?1711149756" media="all">
-<link rel="stylesheet" type="text/css" href="/typo3conf/ext/ul2fpfb/Resources/Public/assets/css/content.css/_content_a039b0daf4758bffb7688562138637eb.css?1711149756" media="all">
-<link rel="stylesheet" type="text/css" href="/typo3conf/ext/brt_videourlreplace/Resources/Public/Css/video-url-replace.css?1661249252" media="all">
-
-<style>
-        :root {
-        --pro-font-color: var(--ulk-font-color);
-        --pro-background: var(--ulk-background);
-        --pro-background-rgb: var(--ulk-background-rgb);
-        --pro-bloc-neutre1: var(--ulk-bloc-neutre1);
-        --pro-bloc-neutre1-rgb: var(--ulk-bloc-neutre1-rgb);
-        --pro-bloc-neutre2: var(--ulk-bloc-neutre2);
-        --pro-bloc-neutre2-rgb: var(--ulk-bloc-neutre2-rgb);
-        --pro-font-color-sombre: var(--ulk-font-color-sombre);
-        --pro-background-sombre: var(--ulk-background-sombre);
-        --pro-background-rgb-sombre: var(--ulk-background-rgb-sombre);
-        --pro-bloc-neutre1-sombre: var(--ulk-bloc-neutre1-sombre);
-        --pro-bloc-neutre1-rgb-sombre: var(--ulk-bloc-neutre1-rgb-sombre);
-        --pro-bloc-neutre2-sombre: var(--ulk-bloc-neutre2-sombre);
-        --pro-bloc-neutre2-rgb-sombre: var(--ulk-bloc-neutre2-rgb-sombre);
-        }
-        :root.dark {
-        --pro-font-color: var(--ulk-font-color-sombre);
-        --pro-background: var(--ulk-background-sombre);
-        --pro-background-rgb: var(--ulk-background-rgb-sombre);
-        --pro-bloc-neutre1: var(--ulk-bloc-neutre1-sombre);
-        --pro-bloc-neutre1-rgb: var(--ulk-bloc-neutre1-rgb-sombre);
-        --pro-bloc-neutre2: var(--ulk-bloc-neutre2-sombre);
-        --pro-bloc-neutre2-rgb: var(--ulk-bloc-neutre2-rgb-sombre);
-        --pro-font-color-sombre: var(--ulk-font-color);
-        --pro-background-sombre: var(--ulk-background-);
-        --pro-background-rgb-sombre: var(--ulk-background-rgb);
-        --pro-bloc-neutre1-sombre: var(--ulk-bloc-neutre1);
-        --pro-bloc-neutre1-rgb-sombre: var(--ulk-bloc-neutre1-rgb);
-        --pro-bloc-neutre2-sombre: var(--ulk-bloc-neutre2);
-        --pro-bloc-neutre2-rgb-sombre: var(--ulk-bloc-neutre2-rgb);
-        }
-        
-                :root {
-                --pro-bloc-primary: var(--ulk-theme10-bloc-primary);
-                --pro-bloc-primary-rgb: var(--ulk-theme10-bloc-primary-rgb);
-                --pro-font-primary: var(--ulk-theme10-font-primary);
-                --pro-font-color-bloc-primary: var(--ulk-theme10-font-color-bloc-primary);
-                --pro-font-accent: var(--ulk-theme10-font-accent);
-                --pro-element-deco: var(--ulk-theme10-bloc-primary);
-                --pro-bloc-primary-sombre: var(--ulk-theme10-bloc-primary-sombre);
-                --pro-bloc-primary-rgb-sombre: var(--ulk-theme10-bloc-primary-rgb-sombre);
-                --pro-font-primary-sombre : var(--ulk-theme10-font-primary-sombre);
-                --pro-font-accent-sombre: var(--ulk-theme10-font-accent-sombre);
-                --pro-element-deco-sombre: var(--ulk-theme10-bloc-primary-sombre);
-                }
-                :root.dark {
-                --pro-bloc-primary: var(--ulk-theme10-bloc-primary-sombre);
-                --pro-bloc-primary-rgb: var(--ulk-theme10-bloc-primary-rgb-sombre);
-                --pro-font-primary: var(--ulk-theme10-font-primary-sombre);
-                --pro-font-color-bloc-primary: var(--ulk-theme10-font-color-bloc-primary-sombre);
-                --pro-font-accent: var(--ulk-theme10-font-accent-sombre);
-                --pro-element-deco: var(--ulk-theme10-bloc-primary-sombre);
-                --pro-bloc-primary-sombre: var(--ulk-theme10-bloc-primary);
-                --pro-bloc-primary-rgb-sombre: var(--ulk-theme10-bloc-primary-rgb);
-                --pro-font-primary-sombre : var(--ulk-theme10-font-primary);
-                --pro-font-accent-sombre: var(--ulk-theme10-font-accent);
-                --pro-element-deco-sombre: var(--ulk-theme10-bloc-primary);
-                }
-            
-    </style>
-
-
-<script src="/typo3temp/assets/js/301d3defed.js?1661257590"></script>
-
-
-
-
-
-  
-    <link href="https://template.univ-lille.fr/ulk/ulk-themes.min.css" rel="stylesheet" />
-    <link href="https://template.univ-lille.fr/ulk/ulk-components.min.css" rel="stylesheet" />
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-
-  
-
-<link rel="canonical" href="https://pro.univ-lille.fr/jose-rouillard"/>
-
-
-
-							<meta property="og:image" content="https://pro.univ-lille.fr//fileadmin/_processed_/b/6/csm_jose_rouillard_4d57c79228.jpg" />
-						
-
-<!-- VhsAssetsDependenciesLoaded ulkicon,font-awesome,rte,popper,bootstrap,corps-translate,elts-height,tarte-au-citron,init -->
-<link rel="stylesheet" href="/typo3temp/assets/vhs-assets-font-awesome-rte-ulkicon.css?1711210888" />
-<script type="text/javascript" src="/typo3conf/ext/ul2fpfb/Resources/Public/assets/js/tarteaucitron/tarteaucitron.js"></script>
-<script type="text/javascript" src="/typo3conf/ext/ul2fpfb/Resources/Public/assets/js/tarteaucitroninit.js"></script></head>
-<body class="page-15388">
-
-
-
-
-    
-
-        <div class="pro-wrapper pro-wrapper--page">
-          <header class="pro-header">
-            
-
-    
-    <nav class="pro-header__navbar pro-navbar--page ulk__navbar">
-        <a class="ulk__navbar__branding ulk__navbar__svg" href="https://pro.univ-lille.fr/">
-            <img alt="Pages Pro" src="/typo3conf/ext/ul2fpfb/Resources/Public/assets/img/logos/logo_pagespro.svg" width="500" height="100" />
-        </a>
-        <div class="ulk__navbar__branding"><span class="ulkicon ulkicon-ulille--horiz"></span></div>
-        <button class="ulk__navbar__user ulk__btn__square" data-bs-toggle="offcanvas" data-bs-target="#pro-rechercher__canvas" aria-controls="pro-rechercher_canvas">
-            <div class="ulk__btn__square__icon ulkicon ulkicon-search--fill"></div><span class="visually-hidden">Rechercher</span>
-        </button>
-        <button class="ulk__navbar__user ulk__btn__square" type="button" data-bs-toggle="offcanvas" data-bs-target="#pro-params__canvas" aria-controls="pro-params_canvas">
-            <div class="ulk__btn__square__icon ulkicon ulkicon-gear--fill"></div><span class="visually-hidden">Parametres</span>
-        </button>
-    </nav>
-
-
-    
-    <div class="pro-rechercher">
-        <div class="offcanvas offcanvas-top pro-rechercher__canvas pro-wrapper--homepage" tabindex="-1" id="pro-rechercher__canvas" aria-labelledby="pro-rechercher_canvas__label">
-            <div class="offcanvas-header">
-                <h2 class="offcanvas-title" id="pro-rechercher_canvas__label">Rechercher</h2>
-                <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><span class="pro-ulkicon-close ulkicon ulkicon-close"></span></button>
-            </div>
-            <div class="offcanvas-body">
-                
-	
-
-
-	
-	<form action='/rechercher?tx_frida_frida%5Baction%5D=search&amp;tx_frida_frida%5Bcontroller%5D=Resultat&amp;cHash=a6763cb491a181eae216ca1bed43489a' method="post" class="pro-research" role="search">
-	<span class="ulkicon ulkicon-search--fill"></span>
-	<input aria-describedby="ulille-home-content-search-help" class="pro-research__input" id="ulille-home-content-search-input" type="text" name="tx_frida_frida[requete]" />
-	<button type="submit" class="btn btn-primary visually-hidden">
-		
-	</button>
-	</form>
-
-
-
-
-
-            </div>
+    <title>Curriculum vitae</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <div class="cv-container">
+        <div class="left-column">
+          <img class="portait" src="https://www.codeur.com/tuto/wp-content/uploads/2022/01/MG_0110-4-293x300.jpg" />
+          <div class="section">
+            <p>
+              <i class="icon fab fa-linkedin text-darkblue"></i> pierre-gomba
+            </p>
+          </div>
+          <div class="section">
+            <h2>À PROPOS</h2>
+            <p>
+              Le <strong>Front-end</strong> est une de mes passions : j’aime intégrer ou imaginer des interfaces modernes, les rendre responsive et les dynamiser avec des animations élégantes. Mes deux technos de coeur sont <strong>Angular</strong> et <strong>Bootstrap</strong>, que j’utilise depuis plus de 6 ans. Je suis aussi Fullstack : PHP, MySQL, Doctrine… 
+            </p>
+            <p>
+              De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité, performance et sérieux.
+            </p>
+          </div>
+          <div class="section">
+            <h2>COMPÉTENCES</h2>
+            <ul class="skills">
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>Angular &#124; Typescript</strong></li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>Bootstrap</strong></li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>HTML5 &#124; CSS3 &#124; SASS</strong></li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>Javascript</strong></li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>jQuery</strong></li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>npm &#124; Webpack</strong></li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> PHP</li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> Zend Framework</li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> MySQL</li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> Git &#124; Github</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Langues</h2>
+            <p>
+              Français, langue maternelle
+              <br>
+              Anglais, compétence professionnelle
+            </p>
+          </div>
+          <div class="section">
+            <h2>Centres d'intérêt</h2>
+            <p>
+              Jeux vidéo, jouer et développer
+              <br>
+              Musique, écoute et composition
+              <br>
+              Art en général
+              <br>
+              Sport
+              <br>
+              Informatique en général
+            </p>
+          </div>
         </div>
-    </div>
-    
-    <div class="pro-params">
-        <div class="offcanvas offcanvas-top pro-params__canvas pro-wrapper--homepage" tabindex="-1" id="pro-params__canvas" aria-labelledby="pro-params_canvas__label">
-            <div class="offcanvas-header">
-                <h2 class="offcanvas-title" id="pro-rechercher_canvas__label">Paramétrage</h2>
-                <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><span class="pro-ulkicon-close ulkicon ulkicon-close"></span></button>
+        <div class="right-column">
+          <div class="header">
+            <h1>Pierre <span class="text-blue text-uppercase">Gomba</span></h1>
+            <p>Freelance Front-end Developer</p>
+            <ul class="infos">
+              <li><i class="icon fas fa-at text-blue"></i> <a href="mailto:contact@pgomba.com">contact@pgomba.com</a></li>
+              <li><i class="icon fas fa-phone text-blue"></i> 04 75 53 80 50</li>
+              <li><i class="icon fas fa-map-marker-alt text-blue"></i> Boulevard de la Constitution 31, 4020 Liège</li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="section">
+              <h2>Expériences <br><span class="text-blue">professionelles</span></h2>
+              <p>
+                <strong>2015 <i class="fas fa-long-arrow-alt-right"></i> 2021</strong>
+                <br>
+                Fullstack Developer à temps plein chez <em>Webadev SPRL</em>
+              </p>
+              <ul class="experience-list">
+                <li>Réalisations de sites web, d’e-shops, d’interfaces et d’applications web sous Angular et Bootstrap</li>
+                <li>Intégration de templates Photoshop, Illustrator, Sketch, Figma</li>
+                <li>Animations CSS / JS</li>
+                <li>Responsive design</li>
+                <li>UI / UX Design</li>
+                <li>Projets sous npm et Webpack</li>
+                <li>Collaboration avec d’autres studios graphique (Studio Debie, SOL,…)</li>
+                <li>Optimisation des performances</li>
+                <li>Développement de templates et de modules réutilisables</li>
+                <li>Projets en équipe, utilisation quotidienne de SVN, Git et Github</li>
+              </ul>
             </div>
-            <div class="offcanvas-body pro-params__modal__body">
-                <div class="pro-params__modal__body__items">
-                    <div class="pro-params__modal__body__item pro-params__modal__body__item--themes">
-                        <h3>Thèmes</h3>
-                        
-                        <div class="theme_mode">
-                            <!-- Premier switch -->
-                            <div class="nav-item mx-1 theme-switch" id="theme-switch-wrapper">
-                                <div class="">
-                                    <div class="">
-                                        <div>
-                                            <img src="/typo3conf/ext/ul2fpfb/Resources/Public/assets/img/menu-params/clair.svg" alt="">
-                                            <p class="buttontitle">
-                                                
-                                            </p>
-                                        </div>
-
-                                        <div>
-                                            <img src="/typo3conf/ext/ul2fpfb/Resources/Public/assets/img/menu-params/sombre.svg" alt="">
-                                            <p class="buttontitle">
-                                                
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="ctnSwitch">
-                                        <label for="checkbox-darkmode" class="switch">
-                                            <input type="checkbox" id="checkbox-darkmode" />
-                                            <span></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- JYS 1dec </div> -->
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="pro-params__modal__body__item pro-params__modal__body__item--accessibilite">
-                        <h3>
-                            Accessibilité
-                        </h3>
-
-                        <div class="theme_mode">
-                            <div class="nav-item  font-switch" id="dyslexia-switch-wrapper">
-                                <img src="/typo3conf/ext/ul2fpfb/Resources/Public/assets/img/menu-params/dyslexie.svg" alt="">
-                                <p class="buttontitle">
-                                    
-                                </p>
-                                <input type="checkbox" id="checkbox-dyslexia" />
-                                <label for="checkbox-dyslexia">
-                                    <span class="buttontitle">
-                                        
-                                    </span>
-                                </label>
-                            </div>
-
-                            <div class="help">
-                                <img src="/typo3conf/ext/ul2fpfb/Resources/Public/assets/img/menu-params/help.svg" alt="">
-                                <p class="buttontitle">
-                                    Accessibilité
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="section">
+              <p>
+                <strong>2021</strong>
+                <br>
+                Freelance en activité
+              </p>
+              <ul class="experience-list">
+                <li>Freelance Front-end Developer</li>
+                <li>Unity Developer / Sound Designer</li>
+              </ul>
             </div>
+            <div class="section">
+              <h2>Études <br><span class="text-blue">& formations</span></h2>
+              <p>
+                <strong>2015 <i class="fas fa-long-arrow-alt-right"></i> 2019</strong>
+                <br>
+                <em>Bachelier en Informatique de Gestion</em>, Diplômé, Institut Saint Laurent
+              </p>
+              <p>
+                <strong>2015</strong>
+                <br>
+                <em>STE-Formations Informatiques</em>, Formation qualifiante de Web Developer
+              </p>
+              <p>
+                <strong>2013 <i class="fas fa-long-arrow-alt-right"></i> 2014</strong>
+                <br>
+                <em>Bachelier en Sciences humaines</em>, Haute École de Liège
+              </p>
+              <p>
+                <strong>2009 <i class="fas fa-long-arrow-alt-right"></i> 2013</strong>
+                <br>
+                <em>Bachelier en Psychologie</em>, Université de Liège
+              </p>
+              <p>
+                <strong>2002 <i class="fas fa-long-arrow-alt-right"></i> 2009</strong>
+                <br>
+                <em>CESS</em>, Institut Notre-Dame de Jupille
+              </p>
+            </div>
+            <div class="section">
+              <h2>Autres <br><span class="text-blue">expériences</span></h2>
+              <p>
+                Permis B, possession d’une voiture
+                <br>
+                Animateur Scout pendant 6 ans
+                <br>
+                Brevet d’animateur de Centre de Vacances
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-
-
-
-            <button class="pro-header__up ulk__btn__shadedbtn pro__btn__up" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="ulkicon ulkicon-up"></span></button>
-            <button class="pro-header__burger ulk__btn__shadedbtn pro__btn__burger" data-bs-toggle="offcanvas" data-bs-target="#pro-nav-principal__canvas" aria-controls="pro-nav-principal__canvas"><span class="ulkicon ulkicon-menu--line"></span><span class="visually-hidden">Menu</span></button>
-          </header>
-          <!--
-          <header class="pro-topbar">
-            
-          </header> -->
-          <main class="pro-main--page">
-            
-<div class="tx-l2l3labens">
-	
-	
-	
-	
-	
-			
-					<header class="pro-profile">
-				
-			<div class="pro-profile__avatar">
-				
-				
-				
-						<img class="pro-profile__avatar__img" src="/fileadmin/_processed_/b/6/csm_jose_rouillard_e4032b4a5e.jpg" width="300" height="300" alt="" />
-						
-					
-			</div>
-
-
-			
-			<h1 class="pro-profile__name"><span>Jose</span> <span class="pro-fiche__fullname__nom">Rouillard</span></h1>
-			
-					</header>
-					<div class="pro-fiche-detail">
-						
-	<div class="pro-identity">
-		<div class="ulk__divider"></div>
-
-		<span class="pro-identity__title pro-identity__right-item" id="corps">Maître de conférences-HDR</span>
-		
-			
-				<span class="pro-identity__CNU pro-identity__right-item"> CNU : <span title="">SECTION 27 - INFORMATIQUE </span></span>
-			
-		
-		<span class="pro-identity__line pro-identity__right-item ulk__greyline"></span>
-		
-				
-				
-					
-						<span class=" visually-hidden">
-							Laboratoire / équipe
-						</span>
-						<ul class="affectLabos"><li><a target="_blank" href="https://www.cristal.univ-lille.fr/" title="Ouverture dans une nouvelle fenêtre"><img style="height:70px; float:left; margin-right:10px; margin-bottom:2px" src="https://refphotos.univ-lille.fr/binaryDownload/ST5049" /><span style="font-size:80%; color:grey;">UMR 9189 - CENTRE DE RECHERCHE EN INFORMATIQUE, SIGNAL ET AUTOMATIQUE DE LILLE</span></a></li></ul>
-					
-				
-			
-		
-			<span class="pro-identity__line pro-identity__right-item ulk__greyline"></span>
-			<span class="pro-identity__researchnetworksicon pro-identity__left-item ulkicon ulkicon-openbook--line"></span>
-			<div class="pro-identity__researchnetworks pro-identity__right-item ulk__button-box">
-				
-					
-						<a href="//orcid.org/0000-0001-9298-0816" target="_blank" class="pro-identity__researchnetworks__orcid pro-networkbox__btn pro-networkbox__btn ulk__btn__shadedbtn"><span class="ulk__btn__shadedbtn__icon ulkicon  ulkicon-orcid--fill"></span><span class="visually-hidden">Page Orcid du membre (Ouverture dans une nouvelle fenêtre)</span></a>
-					
-				
-				
-					<a href="https://hal.archives-ouvertes.fr/search/index/q/*/authIdHal_s/jose-rouillard" target="_blank" class="pro-identity__researchnetworks__hal pro-networkbox__btn pro-networkbox__btn ulk__btn__shadedbtn"><span class="ulk__btn__shadedbtn__icon ulkicon  ulkicon-hal--fill"></span><span class="visually-hidden">HAL jose-rouillard (Ouverture dans une nouvelle fenêtre)</span></a>
-				
-				
-				
-				
-			</div>
-		
-
-	</div>
-
-						
-	<div class="pro-contact">
-		<div class="ulk__divider"></div>
-		
-			
-					<span class="pro-contact__emailicon pro-contact__left-item ulkicon ulkicon-email--fill"></span>
-					<span class="pro-contact__email pro-contact__right-item">
-						<a href="javascript:linkTo_UnCryptMailto(%27kygjrm8hmqc%2CpmsgjjypbYslgt%2Bjgjjc%2Cdp%27);">jose.rouillard<span style="display:none;">[chez]</span><span class="ulkicon ulkicon-email--fill px-1"></span>univ-lille<span style="display:none;">[point]</span><span style="display:normal;" class="point">.</span>fr</a>
-					</span>
-				
-		
-		
-			<span class="pro-contact__phoneicon pro-contact__left-item ulkicon ulkicon-phone--fill"></span>
-				<div class="pro-contact__phone pro-contact__right-item">
-					<li><a href="tel:+33320434012" class="numTel">+33 3 20 43 <span class="numPoste">40 12</span></a></li>
-				</div>
-			
-		
-		
-		
-		
-		
-	</div>
-
-						<div class="pro-domains">
-							<div class="ulk__divider"></div>
-							
-								
-									<span class="pro-domains__composanticon pro-domains__left-item ulkicon ulkicon-domain--fill"></span>
-									<span class="pro-domains__composant pro-domains__right-item">
-										<span class="pro-domains__first-line">
-											Composantes, facultés
-										</span>
-										<span class="pro-domains__second-line">
-											<ul class="affectComposantes"><li class="comp_ST18"><a target="_blank" href="https://sciences-technologies.univ-lille.fr/"><span>FACULTE DES SCIENCES ET TECHNOLOGIES</span></a><ul class="affectComposanteDept"><li class="comp_ST1801"><span>DEPARTEMENT INFORMATIQUE</span></li></ul></li></ul>
-										</span>
-									</span>
-								
-							
-
-							<span class="pro-domains__line pro-domains__right-item ulk__greyline"></span>
-								<span class="pro-domains__specialityicon pro-domains__left-item ulkicon ulkicon-aim--fill"></span>
-								<span class="pro-domains__speciality pro-domains__right-item">
-									<span class="pro-domains__first-line"> Spécialité</span>
-									<span class="pro-domains__secondline"> INFORMATIQUE</span>
-								</span>
-							
-							
-								<span class="pro-domains__line pro-domains__right-item ulk__greyline"></span>
-								<span class="pro-domains__domainicon pro-domains__left-item ulkicon ulkicon-hashtag--fill"></span>
-								<span class="pro-domains__domain pro-domains__right-item">
-									<span class="pro-domains__first-line">
-										Domaines de recherche
-									</span>
-									<span class="pro-domains__secondline">
-										BCI
-									</span>
-								</span>
-							
-							
-
-							
-						</div>
-					</div>
-				
-		
-
-</div>
-
-            <div class="pro-profil__contact-language">
-              
-              
-	
-		
-				<span></span>
-				
-			
-	
-
-            </div>
-            <nav class="pro-menu ulk__menu">
-              
-    <div class="pro-nav-principal__canvas offcanvas offcanvas-start" tabindex="-1" id="pro-nav-principal__canvas" aria-labelledby="pro-nav-principal__canvas__label">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="pro-nav-principal__canvas__label">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body px-xl-0">
-            
-                <ul class="list-unstyled pro-nav-principal__ul">
-                    
-                            <li class="list-unstyled pro-nav-principal__ul__li active">
-                                <a class="ulk__menu__item active" title="Présentation" href="/jose-rouillard">
-                                    <span class="ulkicon ulkicon-info--fill"></span>
-                                    <span class="ulk__menu__item__text">
-                                        Présentation
-                                    </span>
-                                </a>
-                            </li>
-                        
-                    
-                        <li class="list-unstyled pro-nav-principal__ul__li  ">
-                            
-                                    <a href="/jose-rouillard/axes-de-recherche" class="ulk__menu__item  collapsed"  aria-expanded="false">
-                                        <span class="ulkicon ulkicon-lightbulb--line"></span><span class="ulk__menu__item__text"> Axes de recherche </span>
-                                            
-                                        
-                                    </a>
-                                
-                            
-
-                        </li>
-                        
-
-                            
-                    
-                        <li class="list-unstyled pro-nav-principal__ul__li  ">
-                            
-                                    <a href="/jose-rouillard/enseignements" class="ulk__menu__item  collapsed"  aria-expanded="false">
-                                        <span class="ulkicon ulkicon-learning--line"></span><span class="ulk__menu__item__text"> Enseignements </span>
-                                        
-                                    </a>
-                                
-                            
-
-                        </li>
-                        
-
-                            
-                    
-                        <li class="list-unstyled pro-nav-principal__ul__li  ">
-                            
-                                    <a href="/jose-rouillard/publications" class="ulk__menu__item  collapsed"  aria-expanded="false">
-                                        <span class="ulkicon ulkicon-document--line"></span><span class="ulk__menu__item__text"> Publications </span>
-                                        
-                                    </a>
-                                
-                            
-
-                        </li>
-                        
-
-                            
-                    
-                        <li class="list-unstyled pro-nav-principal__ul__li  ">
-                            
-                                    <a href="/jose-rouillard/responsabilites" class="ulk__menu__item  collapsed"  aria-expanded="false">
-                                        <span class="ulkicon ulkicon-hierarchical--line"></span><span class="ulk__menu__item__text"> Responsabilités </span>
-                                        
-                                    </a>
-                                
-                            
-
-                        </li>
-                        
-
-                            
-                    
-                        <li class="list-unstyled pro-nav-principal__ul__li  ">
-                            
-                                    <a href="/jose-rouillard/parcours" class="ulk__menu__item  collapsed"  aria-expanded="false">
-                                        <span class="ulkicon ulkicon-path--line"></span><span class="ulk__menu__item__text"> Parcours </span>
-                                        
-                                    </a>
-                                
-                            
-
-                        </li>
-                        
-
-                            
-                    
-                </ul>
-            
-        </div>
-    </div>
-
-            </nav>
-            <div class="pro-content">
-              <div class="pro-description">
-                <div class="ulk__divider"></div>
-                
-                    
-                  
-                
-                    
-                        <span class="pro-description__titleicon ulkicon ulkicon-info--fill"></span>
-                        
-                        <h2 class="pro-description__title">Présentation</h2>
-                      
-                  
-                <div class="pro-description__content">
-                  
-    
-    
-    
-    
-        
-    
-    
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-
-    
-    
-    
-        <div class="ligne ligne1">
-            
-                    <div class=" ">
-                
-            <div class="row" role="main">
-                
-                        <div class="col-md-8">
-                            
-    
-
-            <div id="c9664" class="frame frame-default frame-type-textmedia frame-layout-0">
-                
-                
-                    
-
-
-
-                
-                
-
-    
-        
-
-    
-        <header>
-            
-
-    
-            <h2 class="">
-                Page web :
-            </h2>
-        
-
-
-
-            
-
-
-
-            
-
-
-
-        </header>
-    
-
-
-
-    
-
-
-                
-
-    <div class="ce-textpic ce-center ce-above">
-        
-            
-
-
-
-        
-
-        
-                <div class="ce-bodytext">
-                    
-                    <pre class="moz-signature"><a href="https://www.cristal.univ-lille.fr/profil/rouillard" target="_blank" rel="noreferrer">www.cristal.univ-lille.fr/profil/rouillard</a></pre>
-                </div>
-            
-
-        
-    </div>
-
-
-                
-                    
-
-
-
-                
-                
-                    
-
-
-
-                
-            </div>
-
-        
-
-
-                        </div>
-                        <div class="col-md-4">
-                            
-    
-
-            <div id="c9188" class="frame frame-default frame-type-list frame-layout-0">
-                
-                
-                    
-
-
-
-                
-                
-                    
-
-    
-        <header>
-            
-
-    
-            <h2 class="">
-                Dernières actualités
-            </h2>
-        
-
-
-
-            
-
-
-
-            
-
-
-
-        </header>
-    
-
-
-
-                
-                
-
-    
-        
-
-
-	
-
-
-<div class="news">
-	
-	
-    <div class="lesnews">
-        
-
-
-        
-    </div>
-
-</div>
-
-    
-
-
-                
-                    
-
-
-
-                
-                
-                    
-
-
-
-                
-            </div>
-
-        
-
-
-                        </div>
-                    
-            </div>
-        </div>
-        </div>
-    
-    
-    
-    
-    
-
-                </div>
-              </div>
-            </div>
-          </main>
-
-          <footer class="pro-footer">
-            
-	<a class="pro-footer__link" href="/mentions-legales">Mentions légales</a>
-	<button type="button" id="tarteaucitronManager" class="pro-footer__link">
-		Gestion des cookies
-	</button>
-	<a class="pro-footer__link" href="/membres">
-		Membres
-	</a><a href="https://swem-formation.univ-lille.fr/" class="pro-footer__link" target="_blank" aria-label="S'inscrire à une formation (nouvelle fenêtre)">
-		S&#039;inscrire à une formation
-	</a>
-	
-		<span class="">
-			Page mise à jour le
-			23/08/2022 (14:37)
-		</span>
-	
-
-          </footer>
-        </div>
-      
-  
-
-    <script type="text/javascript">
-      var _paq = window._paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function () {
-        var u = "https://piwik.univ-lille.fr/";
-        _paq.push(['setTrackerUrl', u + 'piwik.php']);
-        _paq.push(['setSiteId', '136']);
-        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-        g.type = 'text/javascript'; g.async = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
-      })();
-    </script>
-  
-<script type="text/javascript">
-  (tarteaucitron.job = tarteaucitron.job || []).push('ulille');
-</script>
-<script src="/typo3conf/ext/l2l3labens/Resources/Public/JavaScript/halproDisplay.min.js?1677601432"></script>
-<script src="/typo3conf/ext/ul2fpfb/Resources/Public/assets/js/libraries/jquery.min.js?1661247703"></script>
-
-<script src="/typo3conf/ext/brt_videourlreplace/Resources/Public/JavaScript/video-url-replace.js?1661249252"></script>
-
-
-
-
-<script type="text/javascript" src="/typo3temp/assets/vhs-assets-bootstrap-corps-translate-elts-height-popper.js?1711210888"></script></body>
-</html>
+      </div>
+  </body>
